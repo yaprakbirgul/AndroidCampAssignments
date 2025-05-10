@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="16dp"
+        tools:ignore="HardcodedText" />
+
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginTop="24dp">
+
+        <!-- Numbers 1-9 -->
+        <Button
+            android:id="@+id/btn1"
+            style="@style/ButtonStyle"
+            android:text="1"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/ButtonStyle"
+            android:text="2"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/ButtonStyle"
+            android:text="3"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/ButtonStyle"
+            android:text="4"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/ButtonStyle"
+            android:text="5"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/ButtonStyle"
+            android:text="6"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/ButtonStyle"
+            android:text="7"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/ButtonStyle"
+            android:text="8"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/ButtonStyle"
+            android:text="9"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+        <!-- 0, +, = -->
+        <Button
+            android:id="@+id/btn0"
+            style="@style/ButtonStyle"
+            android:text="0"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/ButtonStyle"
+            android:text="+"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            style="@style/ButtonStyle"
+            android:text="="
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sıfırla"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,VisualLintButtonSize,TextContrastCheck" />
+
+</LinearLayout>
